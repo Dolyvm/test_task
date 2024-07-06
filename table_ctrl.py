@@ -7,8 +7,8 @@ from config import table_link, table_id
 table = table_link
 id_table = table_id
 
-#Открываем таблицу, и нужный лист
-gc = gspread.service_account(filename="doltest.json")
+#Открываем таблицу, и нужный лист, а так же указываем полученный json файл в гугле 
+gc = gspread.service_account(filename="filename.json")
 
 sh = gc.open("doltestt")
 
